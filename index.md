@@ -13,11 +13,11 @@ We're gauging interesting right now (sign up below to let us know you're interes
   <dd>Southern Vermont (near Brattleboro, VT)</dd>
   <dt>Duration</dt>
   <dd>Friday afternoon through Sunday afternoon</dd>
-  <dt>Cost<dt>
+  <dt>Cost</dt>
   <dd>TBD, we are working with sponsors to make this event affordable</dd>
 </dl>
 
-### Subscribe to Updates
+### Subscribe
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEgLLy0WrXJjejIcZVcPjEmsQGCPTX4egjlnuUcjtpjS9ImA/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
