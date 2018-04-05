@@ -4,10 +4,21 @@
 $instig8-orange: #F06202;
 $dark-green: #00AC65;
 $light-green: #24D883;
-$header-background: #FFF;
+$text-color: rgb(50, 50, 50);
 
 * { 
     box-sizing: border-box;
+    color: $text-color;
+}
+
+::selection {
+    background-color: $dark-green;
+    color: #FFF;
+}
+
+::-moz-selection {
+    background-color: $dark-green;
+    color: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +79,7 @@ nav {
         height: 50px
     }
     a {
-        color: #000;
+        color: $text-color;
         text-decoration: none;
         text-transform: uppercase;
     }
@@ -84,7 +95,6 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 10rem;
-    background-color: $header-background;
     text-align: center;
 
     img {

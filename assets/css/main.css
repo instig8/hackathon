@@ -299,7 +299,16 @@ template {
   display: none; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #323232; }
+
+::selection {
+  background-color: #00AC65;
+  color: #FFF; }
+
+::-moz-selection {
+  background-color: #00AC65;
+  color: #FFF; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
@@ -348,7 +357,7 @@ nav {
   nav img {
     height: 50px; }
   nav a {
-    color: #000;
+    color: #323232;
     text-decoration: none;
     text-transform: uppercase; }
   @media (max-width: 1140px) {
@@ -361,7 +370,6 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 10rem;
-  background-color: #FFF;
   text-align: center; }
   header img {
     width: 300px; }
