@@ -67,12 +67,75 @@ button {
     margin-bottom: 1rem;
 }
 
+$bar-width: 100px;
+$bar-height: 10px;
+$bar-spacing: 25px;
+
+.menu-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: $bar-width;
+    height: $bar-height + $bar-spacing*2;
+    cursor: pointer;
+    span,
+    span:after,
+    span:before {
+        width: $bar-width;
+        height: $bar-height;
+    }
+    span {
+        display: block;
+        width: $bar-width;
+        position: relative;
+        transform: translateY($bar-spacing);
+        background: $text-color;
+        transition: all 0ms 300ms;
+        &.open {
+            background: rgba(255, 255, 255, 0);
+        }
+    }
+
+    span:before, span:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: $text-color;
+        transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+        transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    span:before {
+        bottom: $bar-spacing;
+    }
+
+    span:after {
+        top: $bar-spacing;
+    }
+
+    span.open:after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        ;
+    }
+    span.open:before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        ;
+    }
+}
+
+
 nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.9);
     padding: 1rem 4rem;
 
     img {
@@ -85,7 +148,19 @@ nav {
     }
 
     @media (max-width: 1140px) {
-        padding: 1rem;
+        width: 100vw;
+        min-height: 100%;
+        position: absolute;
+        flex-direction: column;
+
+        background-color: #FFF;
+
+        left: -100vw;
+        
+        .menu-expanded & {
+            left: 0;
+        }
+        // padding: 1rem;
     }
 }
 
