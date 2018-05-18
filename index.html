@@ -11,14 +11,15 @@
         gtag('config', 'UA-116381598-1');
     </script>
 
-    <script async src="/hackathon/assets/js/welcome.js"></script>
+    <script async src="/assets/js/welcome.js"></script>
+    <script async src="/assets/js/app.js"></script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hack in the Woods</title>
     <meta name="viewport"content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/hackathon/assets/css/main.css" />
-    <link rel="shortcut icon" href="/hackathon/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico">
 
     <script type="application/ld+json">
         {
@@ -38,79 +39,147 @@
             "name": "Hack in the Woods",
             "startDate": "2018-09-28T05:00"
             "endDate": "2018-09-30T02:00"
-            "image": "https://instig8.github.io/hackathon/assets/images/hack_in_the_woods.png"
+            "image": "https://hackinthewoods.org/hackathon/assets/images/hack_in_the_woods.png"
         }
     </script>
     <meta property="og:title" content="Hack in the Woods" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://instig8.github.io/hackathon/" />
-    <meta property="og:image" content="https://instig8.github.io/hackathon/assets/images/hack_in_the_woods.png" />
+    <meta property="og:url" content="https://hackinthewoods.org/" />
+    <meta property="og:image" content="https://hackinthewoods.org/assets/images/hack_in_the_woods.png" />
 </head>
 <body>
-    <div class="menu-icon">
-        <span></span>
+    <div class="topBar">
+        <div class="menu">
+            <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <line x1="0" y1="17" x2="48" y2="17" stroke-width="1" />
+                    <line x1="0" y1="31" x2="48" y2="31" stroke-width="1" />
+                </g>
+    
+                <g>
+                    <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+                    <line x1="0" y1="24" x2="48" y2="24" stroke-width="1" />
+                </g>
+            </svg>
+        </div>
     </div>
     <nav>
-        <a href="/hackathon" ><img src="assets/images/hack_in_the_woods_2.svg" alt="Hack in the Woods Logo"></a>
-        <a href="#signup">Sign Up</a>
-        <a href="#sponsors">Sponsors</a>
+        <a href="/">Home</a>
+        <a href="#register">Register</a>
+        <a href="#venue">Venue</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#faq">FAQ</a>
+        <a href="#sponsor">Sponsors</a>
         <a href="#contact">Contact</a>
     </nav>
-    <header>
-        <img src="assets/images/hack_in_the_woods_2.svg" alt="Hack in the Woods Logo">
-        <h1 id="about">Hack in the Woods</h1>
-        <h2>Sep 28th - 30th, 2018</h2>
-        <p>by <a href="https://brattleborodevelopment.com/instig8/">INSTIG8VT</a></p>
-    </header>
-    <article>
-        <section>
-            <p>Join us in Vermont for a weekend of coding &amp; campfires. We'll be working on fun projects and taking breaks to enjoy the outdoors. Enjoy great food and talk about your projects or life in general. Bring your family, there's a lot to do!</p>
-        </section>
-        <section>
-            <h3>Details</h3>
+    <content>
+        <header>
+            <img src="/assets/images/hack_in_the_woods_2.svg" alt="Hack in the Woods Logo">
+            <h1 id="about">Hack in the Woods</h1>
+            <h2>Sep 28th - 30th, 2018</h2>
+        </header>
+        <article>
+            <section>
+                <p>Join us in Vermont for a weekend of coding &amp; campfires. We'll be working on fun projects and taking breaks to enjoy the outdoors. Enjoy great food and talk about your projects or life in general. Bring your family, there's a lot to do!</p>
+                <p>Registration includes complete accomodations and meals for the entire weekend.</p>
+            </section>
+            <section>
+                <h3 id="register">Register</h3>
+                <!-- Eventbrite embed goes here. -->
+            </section>
+            <section>
+                <h3 id="venue">Venue</h3>
+                <img src="/assets/images/venue/SIT_view_wide.jpg" alt="View of SIT Hills in Fall">
+                <p>
+                    The event is being hosted at the SIT Campus in Brattleboro, VT. We'll have wide views of the rolling hills during peak foliage season. The campus has acres of trails, a pond, a soccer field and connects to nearby Scott Farm Orchard. We'll also have access to the west coast style cafe. <a href="https://www.youvisit.com/tour/sitgraduate">Take a 3d tour.</a>
+                </p>
     
-            <dl>
-                <dt>When</dt>
-                <dd>Friday September 28th 5:00pm until Sunday September 30th 2:00pm</dd>
-                <dt>Where</dt>
-                <dd>
-                    <a href="https://goo.gl/maps/ho6igpAXiGL2">SIT Campus in Brattleboro, VT</a>
-                </dd>
-                <dt>Cost</dt>
-                <dd>TBD. We want this event to be affordable and fun.</dd>
-                <dt>Size</dt>
-                <dd>Attendance will be limited to 40 registrations.</dd>
-            </dl>
-        </section>
-        <section>
-            <h3 id="signup">Sign Up</h3>
-            <p>Registration isn't open yet, but send us your email and we'll keep you updated.</p>
-            <form id="emailForm" method="POST" action="https://formspree.io/m8b6y0l1l5n6b1d1@instig8.slack.com">
-                <input type="email" name="email" placeholder="Your email">
-                <button type="submit">Send</button>
-            </form>
-        </section>
-        <section>
-            <h3 id="contact">Contact</h3>
-            <p>
-                Please reach out to
-                <a href="mailto:rbrown@brattleborodevelopment.com">R.T. @ INTIG8VT</a> or <a href="mailto:akoumjian@gmail.com">Alec</a>
-            </p>
-        
-        </section>
-        <section>
-            <h3 id="sponsors">Sponsors</h3>
-            <p>Hack in the Woods is actively seeking out sponsorship to make this event possible.</p>
-            <div class="sponsors">
-                <a href="https://brattleborodevelopment.com/instig8/">
-                    <img src="/hackathon/assets/images/instig8.png" alt="Instig8VT">
-                </a>
-            </div>
-        </section>
-    
-    </article>
-    <footer>
-        Vector icon sourced from <a href="http://www.freepik.com/" rel="noreferrer nofollow">freepik</a>.
-    </footer>
+                <h4>Accomodations & Meals</h4>
+                <p>
+                     Meals and accomodations will all be in the Lowey International building. The two types of housing available are private
+                    dorm singles with a bathroom at end of the hall and three bedroom suites that share a bathroom and common area. Sheet linens
+                    and pillows are provided and we are looking for comforters. There is also a room with private bathroom we can make available
+                    to a family or person with special needs upon request.
+                </p>
+                <p>
+                    All meals are included from Friday dinner through Sunday lunch and are catered by a selection of local chefs and restaurants. There will be lots of locally sourced meats and vegetables and a wide variety of cuisines.
+                </p>
+                <h4>Directions & Getting Here</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.2349511692264!2d-72.56810918452695!3d42.886029179155074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e11adf098dd303%3A0x9b9bed760e661c31!2sSIT+Graduate+Institute!5e1!3m2!1sen!2sus!4v1526671120122"
+                    frameborder="0"
+                    style="border:0"
+                    allowfullscreen
+                >
+                </iframe>
+                <p>
+                    For detailed information, the <a href="https://www.sit.edu/about/directions/">directions page for SIT has great detailed information</a>. In short, if you are flying in to Boston or Bradley, you can rent a car, take a few busses, or hire transportation shuttle. If you're coming from NYC, there is an amtrak train.
+                </p>
+                <p>
+                    We'll be coordinating carpools and transportation with registrants to keep costs low and keep things simple.
+                </p>
+            </section>
+            <section>
+                <h3 id="schedule">Schedule</h3>
+                <p>We're still working out the specifics, but here's a high level overview of what's happening.</p>
+                <dl>
+                    <dt>Friday Evening</dt>
+                    <dd>Attendees start to arrive and get settled in. We'll have dinner and have an official welcoming. After dinner we'll share project ideas and teams can form and you're welcome to start hacking.</dd>
+                    <dt>Late Friday</dt>
+                    <dd>Possible bonfire, weather permitting.</dd>
+                    <dt>Saturday Morning</dt>
+                    <dd>Optional espresso making & some form of morning exercise or yoga available. Big breakfast and any announcements. Happy hacking continues.</dd>
+                    <dt>Saturday Afternoon</dt>
+                    <dd>Lunch followed by an optional walk in the trails. Continue hacking, possibly outside with a view.</dd>
+                    <dt>Saturday Evening</dt>
+                    <dd>Dinner and a TBD special event. Coffee house? Jam session? Send us a suggestion.</dd>
+                    <dt>Sunday Morning</dt>
+                    <dd>More breakfast and espresso. More optional morning exercises. Around 11 we'll gather to demo our projects.</dd>
+                    <dt>Sunday Afternoon</dt>
+                    <dd>Lunch, packing up, and goodbyes.</dd>
+                </dl>
+            </section>
+            <section>
+                <h3 id="faq">FAQ</h3>
+                <dl>
+                    <dt>What Should I Pack?</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                Your laptop and it's a good idea to download any large files or datasets you might want to use ahead of time (just in case).
+                            </li>
+                            <li>
+                                Outdoor clothes and footwear to hit the trails (if you're inclined). Better to have long pants & socks for tick protection.
+                            </li>
+                            <li>
+                                <em>Good bugspray</em>. There are ticks and they spread lyme and other diseases.
+                            </li>
+                        </ul>
+                    </dd>
+                    <dt>Who runs this thing?</dt>
+                    <dd>We're a small group of volunteers who just want to show what a wonderful place Vermont is and spend time with people who code.</dd>
+                </dl>
+            </section>
+            <section>
+                <h3 id="contact">Contact</h3>
+                <p>
+                    Please reach out to
+                    <a href="mailto:akoumjian@gmail.com">Alec Koumjian</a>
+                </p>
+            </section>
+            <section>
+                <h3 id="sponsors">Sponsors</h3>
+                <p>Hack in the Woods is actively seeking out sponsorship to make this event possible.</p>
+                <div class="sponsors">
+                    <a href="https://brattleborodevelopment.com/instig8/">
+                        <img src="/assets/images/instig8.png" alt="Instig8VT">
+                    </a>
+                </div>
+            </section>
+        </article>
+        <footer>
+            Vector icon sourced from <a href="http://www.freepik.com/" rel="noreferrer nofollow">freepik</a>.
+        </footer>
+    </content>
 </body>
 </html>
