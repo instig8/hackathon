@@ -312,6 +312,14 @@ template {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem 0; }
+  @media (max-width: 30em) {
+    h1[id]::before, h2[id]::before, h3[id]::before, h4[id]::before, h5[id]::before, h6[id]::before {
+      display: block;
+      content: " ";
+      margin-top: -50px;
+      height: 50px;
+      visibility: hidden;
+      pointer-events: none; } }
 
 section {
   margin-bottom: 3rem; }
@@ -368,7 +376,9 @@ body {
   @media (min-width: 30em) {
     body {
       padding-top: 0;
-      padding-left: 15rem; } }
+      padding-left: 15rem; }
+    body.menu-open {
+      position: relative; } }
 
 .topBar {
   position: fixed;

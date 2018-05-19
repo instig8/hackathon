@@ -7,6 +7,8 @@ $light-green: #24D883;
 $text-color: rgb(50, 50, 50);
 $breakpoint: 30em;
 $leftNavWidth: 15rem;
+$topBarHeight: 50px;
+
 
 * { 
     box-sizing: border-box;
@@ -25,6 +27,17 @@ $leftNavWidth: 15rem;
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1rem 0;
+
+    @media (max-width: $breakpoint) {
+        &[id]::before {
+            display: block;
+            content: " ";
+            margin-top: -$topBarHeight;
+            height: $topBarHeight;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
 }
 
 section {
@@ -103,6 +116,10 @@ body {
             padding-top: 0;
             padding-left: $leftNavWidth;
         }
+
+        &.menu-open {
+            position: relative;
+        }
     }
 }
 
@@ -112,7 +129,7 @@ body {
     right: 0;
     top: 0;
     z-index: 2;
-    height: 50px;
+    height: $topBarHeight;
     background-color: #FFF;
 
     @media (min-width: $breakpoint) {
@@ -222,8 +239,6 @@ nav {
             box-shadow: 0 0 10px;
 
             a {
-                // display: block;
-                // flex: unset;
                 max-height: 5rem;
                 text-align: left;
                 padding: 2rem 4rem;
